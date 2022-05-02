@@ -6,7 +6,7 @@ describe("Funciones en JavaScript", () => {
 
         // Escribe aquí tu funcion "saludar"
         
-
+        
         expect(saludar(name)).toBe("Hola, Rosa");
     })
 

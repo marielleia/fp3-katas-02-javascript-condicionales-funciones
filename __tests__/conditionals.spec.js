@@ -7,10 +7,10 @@ describe("Condicionales en JavaScript", () => {
 
         if (name.length >= 6) {
             result = "Lara tiene un nombre largo"
-        }
+        } 
 
         // Edita el .toEqual() (los "???") para que pase el test
-        expect(result).toEqual(???);
+        expect(result).toEqual("???");
     })
 
 
@@ -26,7 +26,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() para que pase el test
-        expect(result).toEqual(???);
+        expect(result).toEqual("???");
     })
 
 
@@ -43,7 +43,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() para que pase el test
-        expect(result).toEqual(???);
+        expect(result).toEqual("???");
     })
 })
 
@@ -54,7 +54,7 @@ describe("Escribe tus propios tests", () => {
         let greeting;
 
         // Escribe aquí tu condicional contemplando las 2 casuísticas. En este caso, el saludo debe ser "¡Hola!" o bien "Hello!".
-        
+            
 
         expect(greeting).toBe("Hello!");
     })
@@ -65,7 +65,7 @@ describe("Escribe tus propios tests", () => {
         let saludo;
         
         // Escribe aquí tu condicional contemplando las 3 casuísticas
-    
+        
 
         expect(saludo).toEqual("Buenas tardes");
     })
