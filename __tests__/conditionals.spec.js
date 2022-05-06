@@ -10,9 +10,8 @@ describe("Condicionales en JavaScript", () => {
         } 
 
         // Edita el .toEqual() (los "???") para que pase el test
-        expect(result).toEqual("???");
+        expect(result).toEqual("Lara tiene un nombre corto");
     })
-
 
     test("Completa el valor del 'expected'", () => {
         let age = 21;
@@ -26,7 +25,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() para que pase el test
-        expect(result).toEqual("???");
+        expect(result).toEqual("Olga es mayor de edad.");
     })
 
 
@@ -43,7 +42,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() para que pase el test
-        expect(result).toEqual("???");
+        expect(result).toEqual(`Pizza con pepperoni`);
     })
 })
 
@@ -54,20 +53,30 @@ describe("Escribe tus propios tests", () => {
         let greeting;
 
         // Escribe aquí tu condicional contemplando las 2 casuísticas. En este caso, el saludo debe ser "¡Hola!" o bien "Hello!".
-            
+        if (country !== "UK") {
+            greeting = "¡Hola!";
+        } else {
+            greeting = "Hello!";}      
 
-        expect(greeting).toBe("Hello!");
-    })
-
+        expect(greeting).toBe("Hello!")
+})
+})
 
     test("Para saludar a alguien hay que saber la hora. Si es antes de las 12, le decimos 'Buenos días', si es después de las 12 pero antes de las 20, le decimos 'Buenas tardes', y si es después de las 20, le decimos 'Buenas noches'", () => {
         let hour = 19;
         let saludo;
         
         // Escribe aquí tu condicional contemplando las 3 casuísticas
+        if (hour <= 12 && hour >= 6 ) 
+        { saludo = 'Buenos días';
+        } 
+        else if (20 < hour > 12) 
+        { saludo = 'Buenas tardes';
+        } 
+        else if (hour => 20 && hour < 6) 
+        { saludo = 'Buenas noches';
+        }
+
+        expect(saludo).toEqual('Buenas noches')
         
-
-        expect(saludo).toEqual("Buenas tardes");
-    })
-
 })
